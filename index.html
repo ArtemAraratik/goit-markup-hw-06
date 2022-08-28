@@ -362,6 +362,22 @@
             </li>
         </ul>
       </div>
+      <div class="submit-block">
+        <label for="submit-email" class="submit-text">Подписаться на разссылку</label>  
+        <div class="email-input">
+            <input 
+            type="email"
+            name="submit-email"
+            class="submit-email"
+            placeholder="E-mail">
+            <div class="submit-btn-box">
+                <button type="submit" class="submit-btn">Подписаться</button>
+            <svg class="submit-icom">
+                <use href="./images/hw6/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+            </div>
+        </div>
+      </div>
      </div>     
 </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -371,6 +387,59 @@
                 <use href="./images/hw4/svg/X.svg#icon-close-black-18dp"></use>
             </svg>
         </button>
+        <p class="modal-tittle">Оставьте свои данные, мы Вам перезвоним</p>
+        <form class="modal-form">
+          <div class="input-field">
+            <label for="user-name" class="label">Имя</label>
+            <div class="input-wrap">
+                <input type="text" 
+                   name="user-name"
+                    class="form-input"
+                    id="user-name">
+                    <svg class="input-icon">
+                        <use href="./images/hw6/symbol-defs.svg#icon-user"></use>
+                    </svg>
+            </div>            
+          </div>
+          <div class="input-field">
+            <label for="user-tel" class="label">Телефон</label>
+            <div class="input-wrap">
+                <input type="tel"
+                 name="user-tel"
+                 class="form-input"
+                 id="user-tel">
+                 <svg class="input-icon">
+                   <use href="./images/hw6/symbol-defs.svg#icon-tell"></use>
+                 </svg>
+            </div>
+              
+           </div>
+           <div class="input-field">
+            <label for="user-mail" class="label">Почта</label>
+            <div class="input-wrap">
+                <input type="email"
+                     name="user-mail"
+                     class="form-input"
+                     id="user-mail">
+                     <svg class="input-icon">
+                        <use href="./images/hw6/symbol-defs.svg#icon-email"></use>
+                    </svg> 
+            </div>
+              
+           </div>  
+           
+            <label form="user-coments" class="label">Коментарии</label>
+              <textarea name="user-coments"
+                        id="user-coments"
+                        class="coments"
+                        placeholder="Введите текст"
+                ></textarea>
+            <fieldset class="checkbox">
+                <input type="checkbox">
+                <p>Соглашаюсь на розсилку и принимаю <a href="">Условия договора</a></p>
+            </fieldset>
+            <button type="submit" class="modal-btn btn">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/modal.js"></script>
